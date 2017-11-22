@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+    
+    <item android:id="@+id/st2"
+          android:title="新增文字"
+          android:icon="@drawable/add"
+          app:showAsAction="ifRoom|withText" /> 
+     <item android:id="@+id/st22"
+          android:title="清空所有文字"
+          android:icon="@drawable/remove"
+          app:showAsAction="ifRoom|withText" /> 
+    
+</menu>

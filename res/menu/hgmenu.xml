@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+    <item android:id="@+id/sql"
+          android:title="建立車站"
+          android:icon="@drawable/add"
+          app:showAsAction="ifRoom|withText" /> 
+    <item android:id="@+id/sql2"
+          android:title="開始模擬"
+          android:icon="@drawable/next"
+          app:showAsAction="ifRoom|withText" /> 
+
+</menu>

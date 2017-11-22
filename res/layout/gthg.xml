@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvgp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GPS定位中..."
+        android:textSize="16sp" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="338dp"
+        android:layout_weight="0.06" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="車站名稱"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10" >
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="車站英文名稱"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/checkBox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="到站時顯示英文"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GPS座標"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="116dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.23"
+                    android:ems="10"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="," />
+
+                <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="98dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.44"
+                    android:ems="10"
+                    android:inputType="numberDecimal" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="取得座標" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="前往音效"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <Spinner
+                        android:id="@+id/spinner1"
+                        android:layout_width="146dp"
+                        android:layout_height="45sp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_weight="1.88"
+                        android:drawSelectorOnTop="true"
+                        android:entries="@array/music2" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignTop="@+id/imageButton2"
+                        android:src="@android:drawable/ic_media_play" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton2"
+                        android:layout_width="55sp"
+                        android:layout_height="48sp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/spinner1"
+                        android:layout_toRightOf="@+id/imageButton1"
+                        android:src="@drawable/stop" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/imageButton2"
+                        android:src="@android:drawable/ic_input_add" />
+
+                    <TextView
+                        android:id="@+id/mtextView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/spinner1"
+                        android:layout_toLeftOf="@+id/imageButton3"
+                        android:layout_toRightOf="@+id/imageButton2"
+                        android:ellipsize="marquee"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:singleLine="true"
+                        android:textSize="25sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="接近音效"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <Spinner
+                        android:id="@+id/spinner2"
+                        android:layout_width="146dp"
+                        android:layout_height="45sp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_weight="1.88"
+                        android:drawSelectorOnTop="true"
+                        android:entries="@array/music2" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/spinner2"
+                        android:src="@android:drawable/ic_media_play" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@android:drawable/ic_input_add" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton5"
+                        android:layout_width="55sp"
+                        android:layout_height="48sp"
+                        android:layout_below="@+id/spinner2"
+                        android:layout_toRightOf="@+id/imageButton4"
+                        android:src="@drawable/stop" />
+
+                    <TextView
+                        android:id="@+id/mtextView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toLeftOf="@+id/imageButton6"
+                        android:layout_toRightOf="@+id/imageButton5"
+                        android:ellipsize="marquee"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:singleLine="true"
+                        android:textSize="25sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="到站音效"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <Spinner
+                        android:id="@+id/spinner3"
+                        android:layout_width="146dp"
+                        android:layout_height="45sp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_weight="1.88"
+                        android:drawSelectorOnTop="true"
+                        android:entries="@array/music2" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/spinner3"
+                        android:src="@android:drawable/ic_media_play" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@android:drawable/ic_input_add" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton8"
+                        android:layout_width="55sp"
+                        android:layout_height="48sp"
+                        android:layout_below="@+id/spinner3"
+                        android:layout_toRightOf="@+id/imageButton7"
+                        android:src="@drawable/stop" />
+
+                    <TextView
+                        android:id="@+id/mtextView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toLeftOf="@+id/imageButton9"
+                        android:layout_toRightOf="@+id/imageButton8"
+                        android:ellipsize="marquee"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:singleLine="true"
+                        android:textSize="25sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="140sp"
+            android:layout_height="wrap_content"
+            android:text="儲存" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="140sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="取消" />
+    </RelativeLayout>
+
+</LinearLayout>
